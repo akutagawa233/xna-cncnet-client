@@ -609,17 +609,17 @@ namespace DTAClient.DXGUI.Multiplayer.CnCNet
         {
             if (isInGameRoom)
             {
-                btnLogout.Text = "Game Lobby";
+                btnLogout.Text = "游戏大厅";
                 return;
             }
 
             if (UserINISettings.Instance.PersistentMode)
             {
-                btnLogout.Text = "Main Menu";
+                btnLogout.Text = "主菜单";
                 return;
             }
 
-            btnLogout.Text = "Log Out";
+            btnLogout.Text = "登出";
         }
 
         private void BtnJoinGame_LeftClick(object sender, EventArgs e) => LbGameList_DoubleLeftClick(this, EventArgs.Empty);

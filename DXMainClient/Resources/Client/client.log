@@ -1,0 +1,10 @@
+03.03. 03:15:45.343    ***Logfile for Tiberian Sun client***
+03.03. 03:15:45.346    Client version: 2.0.8.0
+03.03. 03:15:45.346    Loading settings.
+03.03. 03:15:45.373    KABOOOOOOM!!! Info:
+03.03. 03:15:45.373    Message: 未能加载文件或程序集“Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553”或它的某一个依赖项。系统找不到指定的文件。
+03.03. 03:15:45.375    Source: DTAClient
+03.03. 03:15:45.375    TargetSite.Name: Execute
+03.03. 03:15:45.380    Stacktrace:    在 DTAClient.Startup.Execute()
+   在 DTAClient.PreStartup.Initialize(String[] args)
+   在 DTAClient.Program.Main(String[] args)

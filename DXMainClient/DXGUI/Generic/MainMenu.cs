@@ -950,6 +950,6 @@ namespace DTAClient.DXGUI.Generic
             mapEditorProcess.Start();
         }
 
-        public string GetSwitchName() => "Main Menu";
+        public string GetSwitchName() => "Ö÷²Ëµ¥";
     }
 }

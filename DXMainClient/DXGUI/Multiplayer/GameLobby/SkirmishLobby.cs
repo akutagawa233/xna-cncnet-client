@@ -36,22 +36,22 @@ namespace DTAClient.DXGUI.Multiplayer.GameLobby
             //InitPlayerOptionDropdowns(128, 98, 90, 48, 55, new Point(6, 24));
             InitPlayerOptionDropdowns();
 
-            btnLeaveGame.Text = "Main Menu";
+            btnLeaveGame.Text = "主菜单";
 
             //MapPreviewBox.EnableContextMenu = true;
 
-            ddPlayerSides[0].AddItem("Spectator", AssetLoader.LoadTexture("spectatoricon.png"));
+            ddPlayerSides[0].AddItem("Spectator", AssetLoader.LoadTexture("spectatoricon.png"));//增加了一个观察者模式
 
             MapPreviewBox.LocalStartingLocationSelected += MapPreviewBox_LocalStartingLocationSelected;
             MapPreviewBox.StartingLocationApplied += MapPreviewBox_StartingLocationApplied;
 
-            LoadSettings();
+            LoadSettings();//读取保存的设定
 
             CheckDisallowedSides();
 
-            CopyPlayerDataToUI();
+            CopyPlayerDataToUI();//获取UI里面玩家的数据
 
-            InitializeWindow();
+            InitializeWindow();//动了以后地图列表会变，不知道为什么
 
             WindowManager.CenterControlOnScreen(this);
 
@@ -221,7 +221,7 @@ namespace DTAClient.DXGUI.Multiplayer.GameLobby
 
         public string GetSwitchName()
         {
-            return "Skirmish Lobby";
+            return "遭遇战大厅";
         }
 
         /// <summary>
